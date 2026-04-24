@@ -6,7 +6,7 @@ body {
 /*	font-size:10pt; */
 	color:#000000; 
 
-	background-color: #EFC04F;
+	/* background-color: #EFC04F;*/
 	/* background-image: linear-gradient(#EFC04F, #FFE08F); */ 
 	/* background-attachment: fixed; */
 	}
@@ -77,4 +77,19 @@ a:not(.btn):hover { color:#FF0000; text-decoration:none; }
 @keyframes myFadeOut {
 	from { opacity: 1; }
 	to { opacity: 0; }
+}
+
+/* Inside iframe: remove padding */
+.in-iframe {
+	.container {
+		max-width: max-content;
+		padding: 0;
+	}
+	html, body {
+		margin: 0;
+		padding: 0;
+	}
+	#sectionDescription > div:first-of-type {
+		margin-top: 0;
+	}
 }

@@ -343,10 +343,10 @@
 	<script type="text/javascript">
 		  
 		$(document).ready(function() { 
-			fnStart(); 		
+			fnStart();
+			if (window.self !== window.top)
+				document.documentElement.classList.add('in-iframe');
 		});
-
-	</script>	
-
+	</script>
 </body>
 </html> 
